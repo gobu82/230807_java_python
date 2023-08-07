@@ -29,3 +29,6 @@ url = "https://www.naver.com"
 page = urlopen(url)
 soup = BeautifulSoup(page, "lxml")
 print("ok")
+
+# 오도윤
+print("Difficult!!")
