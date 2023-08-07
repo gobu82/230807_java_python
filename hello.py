@@ -5,16 +5,22 @@ print("Hello, World!")  # 전준형
 import random as rd
 import time as t
 
-li = ["서브웨이", "이가네한식뷔페", "서강대쌈밥"]
+# 메뉴 리스트
+menu_li = ["서브웨이", "이가네한식뷔페", "서강대쌈밥"]
 
-n = 1
-while n <= 3:
+# 함수 정의
+def today_menu() :
+    n = 1
+    while n <= 3:
+        t.sleep(1)
+        print(f"{4 - n}{'..' * n}")
+        n += 1
+
     t.sleep(1)
-    print(f"{4 - n}{'..' * n}")
-    n += 1
+    print(f"메뉴 : {rd.choice(menu_li)}")
 
-t.sleep(1)
-print(f"메뉴 : {rd.choice(li)}")
+# 함수 실행
+today_menu()
 
 print("Hello, Python!")  # 오형동
 
