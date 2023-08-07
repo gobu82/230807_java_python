@@ -17,3 +17,9 @@ t.sleep(1)
 print(f"메뉴 : {rd.choice(li)}")
 
 print("Hello, Python!")  # 오형동
+
+print("안녕하세요. 이제는 밥먹을 시간입니다.")
+url = "https://www.naver.com"
+page = urlopen(url)
+soup = BeautifulSoup(page, "lxml")
+print("ok")
